@@ -1,0 +1,27 @@
+.box {
+    width: 230px;
+    height: 160px;
+    border-radius: 25px;
+    background: #80550c6f;
+    padding: 20px 15px 5px;
+    box-shadow: inset 0 0 8px #000000e8;
+    margin: 10px;
+    float: left;
+
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.main_box {
+    box-sizing: border-box;
+    width: 1300px;
+    height: 480px;
+    background: #9c62ae28;
+    overflow: auto;
+    border-radius: 25px;
+
+
+
+}
