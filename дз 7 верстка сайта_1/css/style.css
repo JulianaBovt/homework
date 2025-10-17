@@ -1,0 +1,233 @@
+body {
+    background: #181E34;
+    font-size: 16px;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    line-height: 150%;
+    color: #fff;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 925px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+/* header ============================================================== */
+
+.header {
+    padding: 30px 0 36px;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    margin-left: auto;
+}
+
+.header-list {
+    display: flex;
+}
+
+.header-item {
+    margin-right: 30px;
+}
+
+.header-btn {
+    background: #fff;
+    border-radius: 100px;
+    color: #2766ae;
+    padding: 14px 30px;
+    font-weight: 500;
+}
+
+/* section 1 ============================================================= */
+
+.hero {
+    background: url("../images/hero-bg.jpg") 10% 50% / cover no-repeat;
+    padding: 120px 0;
+}
+
+.hero-title {
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 49px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.hero-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text {
+    max-width: 436px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.p_1 {
+    margin-bottom: 15px;
+}
+
+.hero-text span {
+    max-width: 436px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #01A2CB;
+}
+
+.hero-btns {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+}
+
+.hero_bth_1 {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    background: linear-gradient(180deg, #00a4cc 0%, #2766ae 100%);
+    border-radius: 100px;
+    padding: 18px 30px;
+    height: 56px;
+    margin-bottom: 10px;
+}
+
+.hero_bth_2 {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    background: linear-gradient(129deg, #00a4cc 0%, #2766ae 100%);
+    border-radius: 100px;
+    padding: 18px 30px;
+    height: 56px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero_bth_2 img {
+    margin-left: 4px;
+}
+
+/* section 2 =============================================================== */
+
+.cards {
+    padding: 120px 0;
+}
+
+.cards-title {
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 49px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.cards-text {
+    text-align: center;
+    max-width: 513px;
+    margin: 0 auto 60px;
+}
+
+.cards-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -28px;
+    padding-bottom: 30px;
+    margin: 0 -14px;
+}
+
+.cards-flex-item {
+    margin-bottom: 28px;
+    padding: 0 14px;
+    flex: 0 0 25%;
+}
+
+.cards-flex-inner {
+    background: #197CB8;
+    border: 2px solid #176bae;
+    border-radius: 16px;
+    box-shadow: 4px 4px 13px rgba(5, 13, 41, 0.76);
+    padding: 28px 15px;
+}
+
+.cards-flex-title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.cards-flex-text {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.cards_bth_1 {
+    display: block;
+    background: linear-gradient(180deg, #00a4cc 0%, #2766ae 100%);
+    border-radius: 100px;
+    padding: 18px 30px;
+    text-align: center;
+    max-width: 436px;
+    margin: 0 auto;
+}
+
+/* footer======================================================== */
+
+.footer {
+    border-top: 1px solid #323952;
+    padding: 60px 0;
+}
+
+.footer-inner {
+    display: flex;
+}
+
+.footer-desc {
+    max-width: 267px;
+    margin-right: auto;
+}
+
+.footer-desc a {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.footer-col {
+    max-width: 204px;
+    width: 100%;
+}
+
+.footer-col-margin {
+    margin-right: 28px;
+}
+
+.footer-title {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 20px;
+}
+
+.footer-item {
+    margin-bottom: 10px;
+}
+
