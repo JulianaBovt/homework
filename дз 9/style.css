@@ -8,11 +8,11 @@ p {
 }
 
 .rectangle {
+    position: fixed;
     width: 650px;
     height: 80px;
     background-color: aliceblue;
-    position: fixed;
-    top: 45vh;
+    top: 85vh;
     bottom: auto;
     right: auto;
     left: 80vh;
@@ -21,14 +21,13 @@ p {
 }
 
 .circle {
+    position: fixed;
     background-color: #ff0000;
     border-radius: 100%;
     height: 100px;
     width: 100px;
-    position: fixed;
-    top: 29vh;
+    top: 79vh;
     bottom: auto;
     right: auto;
     left: 85vh;
-
 }
