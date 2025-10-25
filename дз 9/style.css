@@ -1,0 +1,33 @@
+body {
+    background-color: #000;
+}
+
+p {
+    color: #fff;
+    font-size: 24px;
+}
+
+.rectangle {
+    width: 650px;
+    height: 80px;
+    background-color: aliceblue;
+    position: relative;
+    top: 45vh;
+    bottom: auto;
+    right: auto;
+    left: 80vh;
+    border-radius: 15px;
+    
+}
+
+.circle {
+    background-color: #ff0000;
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: 29vh;
+    bottom: auto;
+    right: auto;
+    left: 85vh;
+}
