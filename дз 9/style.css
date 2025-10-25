@@ -11,7 +11,7 @@ p {
     width: 650px;
     height: 80px;
     background-color: aliceblue;
-    position: relative;
+    position: fixed;
     top: 45vh;
     bottom: auto;
     right: auto;
@@ -25,9 +25,10 @@ p {
     border-radius: 100%;
     height: 100px;
     width: 100px;
-    position: relative;
+    position: fixed;
     top: 29vh;
     bottom: auto;
     right: auto;
     left: 85vh;
+
 }
