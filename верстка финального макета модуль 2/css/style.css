@@ -76,8 +76,9 @@
 }
 
 .header__logo {
+    position: relative;
     max-width: 174px;
-    z-index: 11;
+    z-index: 10;
 }
 
 .header__logo img {
@@ -126,7 +127,7 @@
     height: 50px;
     align-items: center;
     justify-content: center;
-    z-index: 11;
+    z-index: 2;
 }
 
 .burger-icon span,
@@ -323,7 +324,7 @@
         position: fixed;
         inset: 0;
         top: 0;
-        z-index: 10;
+        z-index: 2;
         background: var(--general-bg);
         padding: 26vh 15px 30px;
         font-size: 24px;
@@ -352,10 +353,9 @@
 
 }
 
-/* текст не выравнивается по центру относительно кнопки старта 
-и не видно картинку при увеличения до десктопной версии*/
+/* текст не выравнивается по центру относительно кнопки старта */
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .hero__content {
         display: flex;
         max-width: none;
@@ -367,21 +367,33 @@
     }
 }
 
-.hero__img {
-    display: none;
-}
-
-.hero__img-control--mobile {
-    display: flex;
-    margin: 0 0 30px;
-}
-
 @media (max-width: 600px) {
     .hero {
         padding-bottom: 80px;
     }
-    
+
     .hero__title {
         font-size: 12vw;
     }
+
+    .hero__img {
+        display: none;
+    }
+
+    .hero__img-control--mobile {
+        display: flex;
+        margin: 0 0 30px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .hero__img-button {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+
+    }
+
 }
