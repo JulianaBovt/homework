@@ -1,0 +1,16 @@
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+tr, td, caption {
+    border: 1px solid #000;
+}
+
+caption, thead {
+    font-weight: bold;
+}
+
+.weekend {
+    color: #ff0000;
+}
