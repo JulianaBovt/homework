@@ -6,6 +6,12 @@
     max-width: 30vw;
 }
 
+.data {
+    font-weight: bold;
+    padding: 1vh 0 0;
+    font-size: 1.1em;
+}
+
 .form-group label {
     border-radius: 10px;
     display: flex;
@@ -23,9 +29,15 @@
     cursor: pointer;
 }
 
-.form-group label.rules{
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 8px;
+.form-group label.rules {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.form-group label.message textarea {
+    resize: vertical;
+    min-height: 10vh;
+    max-height: 20vh;
 }
