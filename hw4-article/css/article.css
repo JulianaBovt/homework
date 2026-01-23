@@ -8,7 +8,7 @@ body * {
 }
 
 .container {
-    max-width: 1220px;
+    max-width: 1250px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -64,6 +64,14 @@ p {
     text-transform: uppercase;
     color: #2c332f;
 
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
 }
 
 .article-large {
