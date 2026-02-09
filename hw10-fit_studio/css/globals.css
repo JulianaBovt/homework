@@ -101,13 +101,14 @@ button.button:disabled {
     line-height: 115%;
     text-transform: uppercase;
     color: #2c332f;
+    
 }
 
-.article-title-large {
+.article__title-large {
     font-size: 48px;
 }
 
-.article-title-medium {
+.article__title-medium {
     font-size: 36px;
 }
 
