@@ -2,6 +2,8 @@
   font-family: var(--font-family);
   font-weight: 400;
   color: var(--main-color);
+  scroll-behavior: smooth;
+  scroll-padding-top: 98px;
 }
 
 .page__body {
