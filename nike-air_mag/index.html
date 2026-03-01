@@ -43,9 +43,9 @@
           <button class="header__burger burger" aria-label="Открыть меню" aria-expanded="false"
             aria-controls="header__menu">
             <svg width="24" height="24">
-              <use class="burger__icon-menu" href="./icons/sprite.svg#menu-burger">
+              <use class="burger__icon-menu" href="./icons/sprite.svg#burger">
               </use>
-              <use class="burger__icon-cross" href="./icons/sprite.svg#menu-cross">
+              <use class="burger__icon-cross" href="./icons/sprite.svg#cross">
               </use>
             </svg>
           </button>
@@ -170,8 +170,9 @@
                   data-sizes="button">45</button>
               </div>
               <div class="product__buy-wrapper">
-                <button class="product__buy-button">Купить в 1 клик</button>
-                <button class="product__cart-button" aria-label="Добавить в корзину" title="Добавить в корзину">
+                <button class="product__buy-button" data-modal-button="buy" data-modal-speed="300">Купить в 1
+                  клик</button>
+                <button class="product__cart-button" aria-label="Добавить в корзину" title="Добавить в корзину" data-modal-button="cart" data-modal-speed="500">
                   <img src="./icons/cart-icon.svg" width="23" height="23" loading="lazy" alt="Корзина">
                 </button>
               </div>
@@ -490,6 +491,46 @@
         </div>
       </div>
     </section>
+    <footer class="footer">
+      <div class="footer__container container">
+        <a href="/" class="logo footer__logo">
+          <img class="logo__image" src="./icons/logo-icon.svg" width="50" height="20" alt="Логотип Nike">
+        </a>
+        <nav class="menu footer__menu" aria-label="Главное меню">
+          <ul class="menu__list">
+            <li class="menu__inner"><a href="#air-mag" class="menu__link" lang="en">Air Mag</a></li>
+            <li class="menu__inner"><a href="#sizes" class="menu__link">Размеры</a></li>
+            <li class="menu__inner"><a href="#characteristics" class="menu__link">Характеристики</a></li>
+            <li class="menu__inner"><a href="#top-models" class="menu__link">Другие ТОП модели</a></li>
+          </ul>
+        </nav>
+        <a href="tel:+79292992929" class="footer__phone">+7 (929) 299-29-29</a>
+      </div>
+    </footer>
+    <div class="modal">
+      <div class="modal__window modal-buy" data-modal-window="buy">
+        <button class="modal__close" aria-label="Закрыть" title="Закрыть" data-modal-close>
+          <svg width="24" height="24">
+            <use href="./icons/sprite.svg#cross"></use>
+          </svg>
+        </button>
+        <div class="modal__content modal-buy__content">
+          <h3 class="modal-buy__title title-sm">Заявка на заказ</h3>
+          <form class="modal-buy__form">
+            <label class="modal-buy__label">
+              <input class="modal-buy__input" type="text" placeholder="Ваше имя" name="name" required />
+            </label>
+            <label class="modal-buy__label">
+              <input class="modal-buy__input" type="tel" placeholder="Номер телефона" name="phone" required />
+            </label>
+            <label class="modal-buy__label">
+              <input class="modal-buy__input" type="email" placeholder="E-mail" name="email" required />
+            </label>
+            <button class="modal-buy__submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </main>
 </body>
 

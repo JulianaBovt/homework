@@ -1,3 +1,5 @@
+
+
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -6,7 +8,8 @@ html {
 *,
 ::before,
 ::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body,
@@ -65,7 +68,8 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  appearance: button;
+  -moz-appearance: button;
+       appearance: button;
   -webkit-appearance: button;
 }
 
@@ -83,7 +87,8 @@ button::-moz-focus-inner,
 }
 
 [type="search"] {
-  appearance: textfield;
+  -moz-appearance: textfield;
+       appearance: textfield;
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
@@ -110,5 +115,7 @@ template {
 }
 
 svg * {
+  -webkit-transition-property: fill, stroke;
+  -o-transition-property: fill, stroke;
   transition-property: fill, stroke;
 }
