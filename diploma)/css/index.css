@@ -1,0 +1,15 @@
+/* base */
+@import "./base/normalize.css";
+@import "./base/fonts.css";
+@import "./base/vars.css";
+@import "./base/globals.css";
+
+/* blocks */
+@import './blocks/header.css';
+@import './blocks/actual-news.css';
+@import './blocks/latest-orders.css';
+@import './blocks/most-selled.css';
+@import './blocks/best.css';
+@import './blocks/special-offers.css';
+@import './blocks/other-products.css';
+@import './blocks/footer.css';

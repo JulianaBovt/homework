@@ -1,0 +1,125 @@
+.special-offers {
+    padding: 80px 0;
+}
+
+.special-offers__head {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.special-offers__title {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 115%;
+    color: var(--text-color);
+    margin-bottom: 12px;
+}
+
+.special-offers__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 125%;
+    color: var(--text-color);
+}
+
+.special-offers__inner {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 55fr 64px 45fr;
+    grid-template-columns: 55fr 45fr;
+    gap: 64px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+}
+
+.special-offers__image-wrapper {
+    border-radius: 20px;
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 3 / 2.5;
+}
+
+.special-offers__image {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    display: block;
+}
+
+.special-offers__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.special-offers__item {
+    padding: 20px 0;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 125%;
+    color: var(--text-color);
+}
+
+@media (width <=900px) {
+    .special-offers__inner {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .special-offers__image-wrapper {
+        max-width: 600px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+@media (width <=576px) {
+    .special-offers__title {
+        font-size: 32px;
+    }
+
+    .special-offers__item {
+        font-size: 16px;
+        padding: 14px 0;
+    }
+}
+
+.special-offers__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 48px;
+}
+
+.special-offers__see-all {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: var(--text-color);
+}
+
+@media (any-hover: hover) {
+    .special-offers__see-all:hover {
+        opacity: 0.7;
+    }
+}

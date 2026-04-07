@@ -1,0 +1,175 @@
+.footer {
+    background: var(--cards-bg);
+    padding-top: 64px;
+}
+
+.footer__top {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 64px 2fr;
+    grid-template-columns: 1fr 2fr;
+    gap: 64px;
+    padding-bottom: 64px;
+}
+
+.footer__brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 16px;
+}
+
+.footer__logo img {
+    display: block;
+}
+
+.footer__brand-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--text-color);
+    max-width: 280px;
+    margin: 0;
+}
+
+.footer__nav {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 24px 1fr 24px 1fr 24px 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.footer__col-title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 128%;
+    color: var(--text-color);
+    margin: 0 0 20px;
+}
+
+.footer__col-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 14px;
+}
+
+.footer__col-link {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 128%;
+    color: var(--text-color);
+    text-decoration: none;
+    -webkit-transition: opacity var(--transition-time);
+    -o-transition: opacity var(--transition-time);
+    transition: opacity var(--transition-time);
+}
+
+@media (any-hover: hover) {
+    .footer__col-link:hover {
+        opacity: 1;
+    }
+}
+
+.footer__bottom {
+    border-top: 1px solid #d0d0d0;
+    padding: 24px 0;
+}
+
+.footer__made {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--text-color);
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 6px;
+}
+
+.footer__made-link {
+    font-weight: 700;
+    color: var(--text-color);
+    text-decoration: none;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 4px;
+    -webkit-transition: opacity var(--transition-time);
+    -o-transition: opacity var(--transition-time);
+    transition: opacity var(--transition-time);
+}
+
+@media (any-hover: hover) {
+    .footer__made-link:hover {
+        opacity: 1;
+    }
+}
+
+@media (width <= 900px) {
+    .footer__top {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer__nav {
+        -ms-grid-columns: (1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (width <= 480px) {
+    .footer__nav {
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.footer__col-link {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 128%;
+    color: var(--text-color);
+    text-decoration: none;
+    display: inline-block;
+    -webkit-transition: -webkit-box-shadow 0.25s, -webkit-transform 0.25s;
+    transition: -webkit-box-shadow 0.25s, -webkit-transform 0.25s;
+    -o-transition: box-shadow 0.25s, transform 0.25s;
+    transition: box-shadow 0.25s, transform 0.25s;
+    transition: box-shadow 0.25s, transform 0.25s, -webkit-box-shadow 0.25s, -webkit-transform 0.25s;
+}
+
+@media (any-hover: hover) {
+    .footer__col-link:hover {
+        -webkit-box-shadow: 0 0.5em 0.5em -0.4em var(--shadow);
+                box-shadow: 0 0.5em 0.5em -0.4em var(--shadow);
+        -webkit-transform: translateY(-0.25em);
+            -ms-transform: translateY(-0.25em);
+                transform: translateY(-0.25em);
+        color: var(--text-color);
+    }
+}
